@@ -3,6 +3,7 @@
 
 names = ['Оля', 'Петя', 'Вася', 'Маша']
 # ???
+print(names)
 
 
 # Задание 2
@@ -13,6 +14,9 @@ names = ['Оля', 'Петя', 'Вася', 'Маша']
 
 names = ['Оля', 'Петя', 'Вася', 'Маша']
 # ???
+for name in names:
+    lenпth_of_name = len(name)
+    print(f'{name}: {lenпth_of_name}')
 
 
 # Задание 3
@@ -26,6 +30,11 @@ is_male = {
 }
 names = ['Оля', 'Петя', 'Вася', 'Маша']
 # ???
+for name in names:
+    if is_male[name] is True:
+        print(f'{name}: мужчина')
+    else:
+        print(f'{name}: женщина')
 
 
 # Задание 4
@@ -41,6 +50,11 @@ groups = [
     ['Оля', 'Петя', 'Гриша'],
 ]
 # ???
+print(f'Всего {len(groups)} группы.')
+i = 1
+for group in groups:
+    print(f'Группа {i}: {len(group)} ученика')
+    i += 1
 
 
 # Задание 5
@@ -55,3 +69,7 @@ groups = [
     ['Вася', 'Маша', 'Саша', 'Женя'],
 ]
 # ???
+i = 1
+for group in groups:
+    print(f'Группа {i}:', ', '.join(group))
+    i += 1
